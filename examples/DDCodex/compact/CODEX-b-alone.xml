@@ -37,23 +37,24 @@
   </display>
   <detectors>
     <include ref="CODEX-b.xml" type="xml"/>
-    <detector id="3" name="LHCb" type="DD4hep_BoxSegment" vis="B2_vis">
+    <!--include ref="/afs/cern.ch/user/b/bdey/lxwork/private/LbDD4hepUpgrade/lhcb.xml" type="xml"/-->
+    <!--detector id="3" name="LHCb" type="DD4hep_BoxSegment" vis="B2_vis">
       <material name="Air"/>
       <box      x="500*cm"  y="500*cm"   z="2500*cm"/>
       <position x="0" y="0"   z="1000*cm"/>
       <rotation x="0" y="0"   z="0"/>
-    </detector>
-    <detector id="4" name="WALL" type="DD4hep_BoxSegment" vis="WALL_vis">
+    </detector-->
+    <!--detector id="4" name="WALL" type="DD4hep_BoxSegment" vis="WALL_vis">
       <material name="Concrete"/>
-      <box      x="200*cm"  y="500*cm"   z="2500*cm"/>
-      <position x="2250*cm*sin(60*degree)" y="0"   z="2500*cm*cos(60*degree)"/>
+      <box      x="320*cm"  y="500*cm"   z="1100*cm"/>
+      <position x="2500*cm" y="0"   z="2500*cm*cos(60*degree)"/>
       <rotation x="0" y="0"   z="0"/>
-    </detector>
-    <detector name="Beampipe" type="DD4hep_TubeSegment" vis="BeamPipeVis">
+    </detector-->
+    <!--detector name="Beampipe" type="DD4hep_TubeSegment" vis="BeamPipeVis">
       <material name="Be" />
       <tubs rmin="5*cm" rmax="5.1*cm" zhalf="2600*cm" />
       <position x="0" y="0"   z="1000*cm"/>
       <rotation x="0" y="0"   z="0"/>
-    </detector>
+    </detector-->
   </detectors>
 </lccdd>
